@@ -13,6 +13,9 @@ module.exports = {
 				poppins: ['Poppins', 'sans-serif'],
 			},
     		colors: {
+				backgroundImage: {
+					'custom-gradient': 'linear-gradient(to top, #FC7901, rgba(252,121,1,0.8), rgba(252,121,1,0))',
+				},
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
     			card: {
