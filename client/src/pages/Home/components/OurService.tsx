@@ -11,29 +11,29 @@ const OurService = () => {
   return (
     <div className="bg-[#0f0f0f] text-white flex flex-col justify-center items-center py-12 w-screen">
         <h1 className="text-5xl font-poppins font-semibold mb-12">Our Services</h1>
-        <div className="w-full flex justify-center">
-        <Carousel
+        <div className="flex justify-center">
+          <Carousel
           opts={{
             align: "start",
           }}
           className="w-full max-w-6xl"
-        >
-          <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-                <div className="p-4">
-                  <Card className="bg-[#0f0f0f] text-white h-80 ">
-                    <CardContent className="flex flex-col gap-4 mt-2 items-center justify-center">
-                      <img src="/images/card_1.png" alt="" className="" />
-                      <p>SEO & SEM</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="bg-[#FC7901]" />
-          <CarouselNext className="bg-[#FC7901]"/>
+          >
+            <CarouselContent>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+                  <div className="w-full flex justify-center">
+                    <Card className="bg-[#0f0f0f] text-white bg-custom-gradient">
+                      <CardContent className="flex flex-col gap-14 mt-2 items-center justify-center">
+                        <img src="/images/card_1.png" alt="" className="" />
+                        <p>SEO & SEM</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="bg-[#FC7901]" />
+            <CarouselNext className="bg-[#FC7901]"/>
           </Carousel>
         </div>
     </div>
