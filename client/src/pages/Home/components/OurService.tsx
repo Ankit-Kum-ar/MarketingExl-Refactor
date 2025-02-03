@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const OurService = () => {
   return (
-    <div className="bg-[#0f0f0f] text-white flex flex-col justify-center items-center py-12">
+    <div className="bg-[#0f0f0f] text-white flex flex-col justify-center items-center py-12 w-screen">
         <h1 className="text-5xl font-poppins font-semibold mb-12">Our Services</h1>
         <div className="w-full flex justify-center">
         <Carousel

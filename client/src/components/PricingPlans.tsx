@@ -4,7 +4,8 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const PricingPlans: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-10 px-6 lg:px-16">
+    <>
+    <div className="bg-black text-white py-10 px-6 lg:px-16">
       <h2 className="text-3xl lg:text-4xl font-bold text-center text-orange-500 mb-10">
         CHOOSE YOUR PLAN TODAY!
       </h2>
@@ -146,7 +147,14 @@ const PricingPlans: React.FC = () => {
           </button>
         </div>
       </div>
+
+      
     </div>
+    <div className="bg-gradient-to-r from-[#FD4C2A] to-[#F99115] flex justify-center items-center gap-4 p-10 my-10 cursor-not-allowed ">
+      <h3 className="text-white font-anybody text-3xl lg:text-5xl font-bold ">CUTOMIZE YOUR PACKAGE</h3>
+      <img src="images/emojione-monotone_left-arrow.svg" alt="" className="h-10 w-10" />
+    </div>
+    </>
   );
 };
 
