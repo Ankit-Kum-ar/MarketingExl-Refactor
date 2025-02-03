@@ -67,14 +67,14 @@ const ClientCarousel = () => {
         
 
   return (
-    <div ref={galleryRef} className="flex flex-col items-center justify-center min-h-[100vh]  bg-[#0F0F0F]">
+    <div ref={galleryRef} className="flex flex-col items-center justify-center  bg-[#0F0F0F]">
       {/* Heading */}
       <h2 ref={headingRef} className="font-bold text-[#FC7901] text-2xl md:text-4xl lg:text-6xl p-10 md:p-20 opacity-0">
       MEET OUR CLIENTS
       </h2>
 
       {/* Carousel Container */}
-      <div className="relative overflow-hidden w-full">
+      <div className="relative overflow-hidden w-full py-10">
         <div
           ref={carouselRef}
           className="flex space-x-4 px-4 w-max"

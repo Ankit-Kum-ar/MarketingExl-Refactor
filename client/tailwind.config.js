@@ -11,6 +11,7 @@ module.exports = {
     		},
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
+				anybody: ['Anybody', 'Poppins']
 			},
     		colors: {
     			background: 'hsl(var(--background))',
