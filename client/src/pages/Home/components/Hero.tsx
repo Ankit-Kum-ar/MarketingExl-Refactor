@@ -35,7 +35,7 @@ const Hero = () => {
             <h2 className='greeting text-white text-2xl md:text-4xl font-extrabold text-left uppercase z-10 font-anybody'>Welcome To</h2>
         </div>
       <h1 ref={textRef} className='greeting text-[#FC7901] text-5xl md:text-[106px] font-extrabold text-center mb-10 z-20 p-0 font-anybody'>MARKETING EXL</h1>
-      <div className='bg-black absolute bottom-0 right-0 z-10 w-48 h-20 md:w-48 md:h-20'></div>
+      <div className='bg-black absolute bottom-0 right-0 z-10 w-48 h-20 md:w-48 md:h-40'></div>
     </div>
     <div className=' h-full w-full absolute top-0 left-0   '>
     <Suspense fallback={<div className='w-full h-full bg-black'></div>}>

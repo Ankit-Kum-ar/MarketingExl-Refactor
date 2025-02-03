@@ -12,7 +12,7 @@ const Home = () => {
     <div className="bg-[#0f0f0f] h-[100vh]">
       <Hero />
       <AboutUs />
-      <OurService />
+      {/* <OurService /> */}
       <Joinus />
       <ClientCarousel />
       <Form />
