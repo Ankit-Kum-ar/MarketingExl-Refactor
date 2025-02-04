@@ -1,6 +1,8 @@
 import Heading from "@/components/Heading"
 import Hero from "./components/Hero"
 import OurServices from "./components/OurServices"
+import CardContainer from "./components/CardContainer"
+import ServiceCoursel from "./components/ServiceCoursel"
 
 const Services = () => {
   return (
@@ -8,6 +10,8 @@ const Services = () => {
       <Heading />
       <Hero />
       <OurServices />
+      <CardContainer />
+      <ServiceCoursel />
     </div>
   )
 }
