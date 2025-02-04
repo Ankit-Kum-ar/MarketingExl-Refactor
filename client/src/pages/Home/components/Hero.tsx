@@ -30,7 +30,7 @@ const Hero = () => {
     <>
     
     <div  ref={heroRef} className='HeroContent  bg-black flex flex-col justify-between  relative h-screen w-screen items-center bg-gradient-to-t from-black via-transparent to-transparent'>
-        <div className='flex flex-col items-start w-11/12 md:w-8/12 z-10 mt-20 px-6 md:px-0'>
+        <div className='flex flex-col items-start w-12/12 md:w-8/12 z-10 mt-10 px-6 md:px-0'>
             <h2 className='greeting text-white text-5xl md:text-9xl font-extrabold text-left uppercase z-10 font-anybody '>Hello</h2>
             <h2 className='greeting text-white text-2xl md:text-4xl font-extrabold text-left uppercase z-10 font-anybody'>Welcome To</h2>
         </div>
