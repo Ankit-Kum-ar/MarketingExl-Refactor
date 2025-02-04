@@ -3,11 +3,9 @@ import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Navbar from "./components/Navbar"
 import Services from "./pages/Services/Services"
-<<<<<<< HEAD
 import Footer from "./components/Footer"
-=======
 import Package from "./pages/Package/Package"
->>>>>>> ddf140ea7bf096432d19ec36f56fd5dbd937010c
+import ServiceDetail from "./pages/Services/components/ServiceDetail"
 function App() {
 
   return (
@@ -18,8 +16,9 @@ function App() {
         <Route path="/about" element = { <About/> } />
         <Route path="/services" element = { <Services /> } />
         <Route path="/packages" element = {<Package />} />
+        <Route path="/service/:id" element={<ServiceDetail />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
