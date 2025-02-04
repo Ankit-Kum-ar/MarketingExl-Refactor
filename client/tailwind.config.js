@@ -6,6 +6,7 @@ module.exports = {
     	extend: {
 			backgroundImage: {
 				'custom-gradient-2': 'linear-gradient(98deg, #FC7901 19.14%, #FFA43C 137.18%)',
+				'custom-gradient-3': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)'
 			},
     		borderRadius: {
     			lg: 'var(--radius)',

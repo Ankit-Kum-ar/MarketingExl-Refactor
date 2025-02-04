@@ -67,7 +67,7 @@ const ClientCarousel = () => {
         
 
   return (
-    <div ref={galleryRef} className="flex flex-col items-center justify-center  bg-[#0F0F0F]">
+    <div ref={galleryRef} className="flex flex-col items-center justify-center w-screen  bg-[#0F0F0F]">
       {/* Heading */}
       <h2 ref={headingRef} className="font-bold text-[#FC7901] text-2xl md:text-4xl lg:text-6xl p-10 md:p-20 opacity-0">
       MEET OUR CLIENTS
