@@ -14,7 +14,7 @@ const Form = () => {
 
 
   return (
-    <section ref={formRef} className="bg-black text-white p-6 lg:p-10  shadow-lg  grid grid-cols-1 lg:grid-cols-2 gap-12 w-full rounded-3xl">
+    <section ref={formRef} className="bg-black text-white p-6 lg:p-10  shadow-lg  grid grid-cols-1 lg:grid-cols-2 gap-12 w-full ">
         <div className="form bg-transparent backdrop-blur-lg text-white border-2 border-white flex flex-col justify-center items-center rounded-3xl">
             <div className="title flex flex-row gap-2 justify-center items-center p-5">
                 <div className='flex flex-col'><h3 className='text-3xl font-bold text-[#FC7901] font-anybody'>FILL THE FORM</h3> <h3  className='text-3xl font-bold text-[#FC7901] font-anybody

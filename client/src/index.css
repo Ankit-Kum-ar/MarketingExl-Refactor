@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import "leaflet/dist/leaflet.css"; 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,9 +13,11 @@
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
 }
+
+
 }
 body {
-  background-color: black;
+  background-color: #0f0f0f;
 }
 
 @layer base {

@@ -18,7 +18,7 @@ const Joinus = () => {
   }, []);
 
   return (
-    <div ref={joinRef} className='flex min-h-screen w-full bg-[#0f0f0f] overflow-hidden items-center justify-center px-4'>
+    <div ref={joinRef} className='flex min-h-screen w-full bg-black overflow-hidden items-center justify-center px-4'>
       <div className='relative z-10 text-white flex flex-col justify-center items-center gap-8 w-full max-w-4xl text-center'>
         <h1 className='text-4xl md:text-6xl text-[#FC7901] font-extrabold'>JOIN US</h1>
         <p className='text-lg md:text-xl font-poppins'>We craft tailored digital marketing strategies to elevate your brand, engage audiences, and drive measurable results.</p>

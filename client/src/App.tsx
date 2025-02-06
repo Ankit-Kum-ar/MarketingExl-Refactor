@@ -6,6 +6,7 @@ import Services from "./pages/Services/Services"
 import Package from "./pages/Package/Package"
 import ScrollToTop from "./components/ScrollToTop"
 import PageTransition from "./components/PageTransition"
+import ContactUs from "./pages/Contact/ContactUs"
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element = { <About/> } />
         <Route path="/services" element = { <Services /> } />
         <Route path="/packages" element = {<Package />} />
+        <Route path="/contact" element ={<ContactUs />} />
       </Routes>
     </>
   )
