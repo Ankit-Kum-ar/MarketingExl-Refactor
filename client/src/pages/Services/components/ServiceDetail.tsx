@@ -6,6 +6,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import ClientCarousel from '@/components/ClientCarousel';
 
 type ServiceKeys = keyof typeof serviceDetails;
 
@@ -49,6 +50,8 @@ const ServiceDetail = () => {
                     <img src={service.photoUrl} alt="" className='md:w-[80%] rounded-3xl hidden md:block'/>
                 </div>
             </div>
+
+            <ClientCarousel />
 
         </div>
     )
