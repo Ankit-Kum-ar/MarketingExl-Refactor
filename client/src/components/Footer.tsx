@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -5,21 +6,45 @@ const Footer = () => {
       <div className="footertop w-[80vw] flex flex-col md:flex-row justify-between ">
         <div className="about w-full md:w-1/3"> 
           <div className="img-container py-4">
-            <img src="./images/logo.png" alt="MarketingEXL" />
+          <Link
+                            to="/"
+                            className="text-xl font-bold text-primary font-poppins tracking-wider"
+                        >
+                            <img src="/images/logo.png" alt="" />
+                        </Link>
           </div>
           <div className="info object-contain text-left text-white font-poppins leading-relaxed text-xs md:text-sm font-thin py-4 "><p>we are committed to propelling your business forward in the dynamic digital marketing landscape. As a leading digital marketing agency, we specialize in crafting tailored strategies that elevate your brand, engage your audience, and deliver measurable results.
           </p></div>
-          <div className="icons bg-black rounded-lg py-4">hi</div>
+          <div className="icons flex flex-row justify-start gap-4 py-4">
+            <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer" ><img
+                 src= "/images/fb-icon.svg"
+                 alt="Facebook"
+        
+                    className=" text-white "
+                  /></div>
+            <div className="bg-[#554137]  aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer" ><img
+                 src= "/images/ln-icon.svg"
+                 alt="Mail"
+        
+                    className=" text-white"
+                  /></div>
+            <div  className="bg-[#554137]  aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer "><img
+                 src= "/images/insta-icon.svg"
+                 alt="Mail"
+        
+                    className=" text-white "
+                  /></div>
+          </div>
         </div>
         <div className="quick text-white py-10">
           <h4 className="py-2 text-xs md:text-sm">Quick Links</h4>
-          <ul className="list-disc list-inside text-xs md:text-sm ">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Services</li>
-            <li>Packages</li>
-            <li>Conatct Us</li>
-            <li>Privacy Policy</li>
+          <ul className="list-disc list-inside text-xs md:text-sm underline  ">
+            <li className=' hover:text-orange-500'><Link to="/"> Home </Link></li>
+            <li className=' hover:text-orange-500'><Link to="/about">About us</Link></li>
+            <li className=' hover:text-orange-500'><Link to="/services">Services</Link></li>
+            <li className=' hover:text-orange-500'><Link to="/packages">Packages</Link></li>
+            <li className=' hover:text-orange-500'><Link to="/contact">Conatct Us</Link></li>
+            <li className=' hover:text-orange-500'><Link to="/blog">Blog</Link></li>
           </ul>
         </div>
         <div className="contact text-white flex flex-col justify-center pb-8 ">

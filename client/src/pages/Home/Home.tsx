@@ -6,7 +6,7 @@ import ClientCarousel from "@/components/ClientCarousel"
 import Form from "@/components/Form"
 import PricingPlans from "@/components/PricingPlans"
 import Testimonial from "./components/Testimonial"
-import Footer from "@/components/Footer"
+
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Form />
       <PricingPlans />
       <Testimonial />
-      <Footer />
+      
     </div>
   )
 }

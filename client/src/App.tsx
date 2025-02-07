@@ -3,7 +3,7 @@ import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Navbar from "./components/Navbar"
 import Services from "./pages/Services/Services"
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 import Package from "./pages/Package/Package"
 import ScrollToTop from "./components/ScrollToTop"
 import PageTransition from "./components/PageTransition"
@@ -26,7 +26,7 @@ function App() {
         <Route path="/contact" element ={<ContactUs />} />
         <Route path="/service/:id" element={<ServiceDetail />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

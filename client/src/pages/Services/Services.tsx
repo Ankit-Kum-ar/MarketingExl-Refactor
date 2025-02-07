@@ -4,6 +4,7 @@ import OurServices from "./components/OurServices"
 import CardContainer from "./components/CardContainer"
 import ServiceCoursel from "./components/ServiceCoursel"
 
+
 const Services = () => {
   return (
     <div className="flex flex-col items-center justify-center">
@@ -12,6 +13,7 @@ const Services = () => {
       <OurServices />
       <CardContainer />
       <ServiceCoursel />
+      
     </div>
   )
 }

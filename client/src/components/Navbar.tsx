@@ -27,7 +27,7 @@ const Navbar = () => {
                     <div className="flex items-center md:px-4 px-0">
                         <Link
                             to="/"
-                            className="text-xl font-bold text-primary font-mono tracking-wider"
+                            className="text-xl font-bold text-primary font-poppins tracking-wider"
                         >
                             <img src="/images/logo.png" alt="" />
                         </Link>
