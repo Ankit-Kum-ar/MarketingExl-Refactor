@@ -1,6 +1,6 @@
 import PricingPlans from "@/components/PricingPlans"
-import Header from "./components/Header"
 import ClientCarousel from "@/components/ClientCarousel"
+import Heading from "@/components/Heading"
 
 
 
@@ -9,7 +9,7 @@ const Package = () => {
 
   return (
     <div className="flex flex-col items-center justify-center ">
-        <Header />
+        <Heading title="Packages"/>
         <PricingPlans />
         <ClientCarousel />
         

@@ -8,7 +8,7 @@ import ServiceCoursel from "./components/ServiceCoursel"
 const Services = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading />
+      <Heading title="Services"/>
       <Hero />
       <OurServices />
       <CardContainer />
