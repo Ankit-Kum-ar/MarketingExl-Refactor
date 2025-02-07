@@ -7,6 +7,7 @@ import Form from "@/components/Form"
 import PricingPlans from "@/components/PricingPlans"
 import Testimonial from "./components/Testimonial"
 
+
 const Home = () => {
   return (
     <div className="bg-[#0f0f0f] ">
@@ -18,6 +19,7 @@ const Home = () => {
       <Form />
       <PricingPlans />
       <Testimonial />
+      
     </div>
   )
 }

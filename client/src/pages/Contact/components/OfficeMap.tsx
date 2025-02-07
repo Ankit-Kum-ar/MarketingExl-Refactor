@@ -14,12 +14,12 @@ const customIcon = L.icon({
 
 const OfficeMap = () => {
   return (
-    <>
-    <div className="w-full h-[400px] rounded-lg overflow-hidden relative shadow-md ">
+    <div className="relative">
+    <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-md z-10 ">
       <MapContainer 
         center={[28.510310139648677, 77.38057470529164]} // office's latitude and longitude
         zoom={15}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%", zIndex:10 }}
         scrollWheelZoom={false} //Disable zoom via scroll
         dragging={false} // Disable map dragging
         zoomControl={false} // Remove zoom controls
@@ -44,7 +44,7 @@ const OfficeMap = () => {
       
     </div>
 
-    </>
+    </div>
   );
 };
 

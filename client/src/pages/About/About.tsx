@@ -5,6 +5,7 @@ import Form from '@/components/Form'
 import Grid from './components/Grid'
 import Vision from './components/Vision'
 
+
 function About() {
   return (
     <div>
@@ -13,6 +14,7 @@ function About() {
       <Vision />
       <Joinus /> 
       <Form />
+      
     </div>
   )
 }

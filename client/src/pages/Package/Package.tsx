@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import ClientCarousel from "@/components/ClientCarousel"
 
 
+
 const Package = () => {
     
 
@@ -11,6 +12,7 @@ const Package = () => {
         <Header />
         <PricingPlans />
         <ClientCarousel />
+        
       
     </div>
   )
