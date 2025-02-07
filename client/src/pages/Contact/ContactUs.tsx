@@ -5,8 +5,9 @@ import OfficeMap from "./components/OfficeMap"
 const ContactUs = () => {
   return (
     <div>
+       <Form />
         <OfficeMap />
-        <Form />
+       
         <ClientCarousel />
       
     </div>
