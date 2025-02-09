@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors(                //this allows us to make requests from the frontend to the backend
     {
-        origin: '*',   //this is the URL of the frontend. * means all URLs are allowed to make requests to the backend
+        origin: 'https://marketingexl-client.onrender.com',   //this is the URL of the frontend. * means all URLs are allowed to make requests to the backend
         credentials: true
     }
 ));    

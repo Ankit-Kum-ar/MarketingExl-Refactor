@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/v1";
+const BASE_URL = "https://marketingexl-refactor.onrender.com/api/v1";
 // http://localhost:5000/api/v1/lead/generate
+// https://marketingexl-refactor.onrender.com
 
 const axiosInstance = axios.create();
 

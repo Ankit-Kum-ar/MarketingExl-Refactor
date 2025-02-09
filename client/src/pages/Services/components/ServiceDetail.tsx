@@ -6,6 +6,8 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import ClientCarousel from '@/components/ClientCarousel';
+import PageTitle from '@/components/PageTitle';
 
 type ServiceKeys = keyof typeof serviceDetails;
 
@@ -20,6 +22,7 @@ const ServiceDetail = () => {
 
     return (
         <div className="flex flex-col items-center justify-center mt-10">
+            <PageTitle title={`${service.title} - MarketingExl`} />
             <div className='flex flex-col text-white h-80 w-[80vw] justify-center items-center gap-6 bg-[url("/images/cards/background.png")] rounded-3xl border-2 border-[#FC7901]'>
                 <div className='flex flex-col justify-center items-center'>
                     <img src={`${service.vecSrc}`} alt="" className="relative" />
@@ -49,6 +52,8 @@ const ServiceDetail = () => {
                     <img src={service.photoUrl} alt="" className='md:w-[80%] rounded-3xl hidden md:block'/>
                 </div>
             </div>
+
+            <ClientCarousel />
 
         </div>
     )
