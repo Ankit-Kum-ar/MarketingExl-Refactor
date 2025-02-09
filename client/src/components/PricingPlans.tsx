@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const PricingPlans: React.FC = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 80%",
+        end: "bottom 50%",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    tl.from(".plan-card", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.3,
+      ease: "power3.out",
+    });
+  }, []);
+
   return (
     <>
-    <div className="bg-black text-white py-10 px-6 lg:px-16">
+      <div ref={containerRef} className="bg-black text-white py-10 px-6 lg:px-16">
       <h2 className="text-3xl lg:text-4xl font-bold text-center text-orange-500 mb-10">
         CHOOSE YOUR PLAN TODAY!
       </h2>
