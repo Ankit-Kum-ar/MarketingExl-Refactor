@@ -36,7 +36,7 @@ const leadSchema = new Schema({
         type: String,
         required: [true, 'Please choose a package'],
         enum: {
-            values: ['Standard', 'Premium', 'Entreprises'],
+            values: ['Standard', 'Premium', 'Entreprise'],
             message: '{VALUE} is not supported'
         }
     },
@@ -44,7 +44,7 @@ const leadSchema = new Schema({
         type: String,
         required: [true, 'Please choose a service'],
         enum: {
-            values: ['Social Media Management', 'SEO and SEM', 'Email and WhatsApp Marketing'],
+            values: ['Social Media Management', 'SEO and SEM', 'Email and WhatsApp Marketing', 'Web Development and UIUX', 'Conversion Rate Optimization', 'E Commerce Development', 'Influencer Marketing', 'Content Marketing', 'PR & Reputation Management', 'Brand Guidelines', 'Logo Design', 'Motion design & Video Editing'],
             message: '{VALUE} is not supported'
         }
     },

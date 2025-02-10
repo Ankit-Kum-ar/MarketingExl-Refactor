@@ -1,11 +1,12 @@
-import { configureStore } from "@reduxjs/toolkit";
-import leadSliceReducer from "./slices/LeadSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import leadReducer from './slices/LeadSlice';
 
-const store = configureStore({
-    reducer: {
-        lead: leadSliceReducer
-    },
-    devTools: true
-})
+export const store = configureStore({
+  reducer: {
+    lead: leadReducer,
+  },
+});
 
-export default store;
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

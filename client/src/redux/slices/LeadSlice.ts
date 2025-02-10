@@ -6,9 +6,9 @@ const initialState = {
     data: localStorage.getItem('data') && localStorage.getItem('data') !== 'undefined' ? JSON.parse(localStorage.getItem('data') as string) : {},       // JSON.parse() converts string to object
 }
 
-export const leadGenerate = createAsyncThunk("auth/signup", async (data) => {
+export const leadGenerate = createAsyncThunk("auth/signup", async (formData: { fullName: string; email: string; phone: string; packages: string; chooseService: string }) => {
     try {
-        let res = await axiosInstance.post("lead/generate", data);
+        let res = await axiosInstance.post("lead/generate", formData);
         await toast.promise(Promise.resolve(res), {
             loading: 'Submitting your details...',
             success: (data) => data?.data?.message || 'Successfully Submitted',
