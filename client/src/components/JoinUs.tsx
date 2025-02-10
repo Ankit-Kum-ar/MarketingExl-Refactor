@@ -67,7 +67,7 @@ const JoinUs = () => {
 
       // Buttons Animation (Staggered)
       gsap.fromTo(
-        buttonsRef.current?.children,
+        buttonsRef.current ? buttonsRef.current.children : [],
         { opacity: 0, y: 20, scale: 0.9 },
         {
           opacity: 1,
