@@ -8,7 +8,6 @@ import PricingPlans from "@/components/PricingPlans"
 import Testimonial from "./components/Testimonial"
 import PageTitle from "@/components/PageTitle"
 
-
 const Home = () => {
   return (
     <div className="bg-[#0f0f0f] ">
