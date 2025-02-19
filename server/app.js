@@ -13,12 +13,31 @@ import leadRoutes from './routes/leadRoutes.js';
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors(                //this allows us to make requests from the frontend to the backend
-    {
-        origin: 'https://marketingexl-client.onrender.com',   //this is the URL of the frontend. * means all URLs are allowed to make requests to the backend
-        credentials: true
+// app.use(cors(                //this allows us to make requests from the frontend to the backend
+//     {
+//         origin: 'https://marketingexl-client.onrender.com',   //this is the URL of the frontend. * means all URLs are allowed to make requests to the backend
+//         credentials: true
+//     }
+// ));    
+
+const cors = require("cors");
+
+const allowedOrigins = [
+  "https://marketingexl-client.onrender.com",  // OLD frontend
+  "https://marketingexl.com"                   // NEW frontend
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
     }
-));    
+  },
+  credentials: true
+}));
+
 // const multer  = require('multer');
 // const upload = multer();
 // app.use(upload.array());
