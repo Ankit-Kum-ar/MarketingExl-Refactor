@@ -11,12 +11,18 @@ import ServiceDetail from "./pages/Services/components/ServiceDetail"
 import Blog from "./pages/Blog/Blog"
 import PageTransition from "./components/PageTransition"
 import { useEffect } from "react"
-import { trackPageView } from "./utils/analytics"
+import { initGA, logPageView } from "./utils/analytics"
 function App() {
   const location = useLocation();
 
   useEffect(() => {
-    trackPageView(location.pathname + location.search);
+    // Initialize GA only once, when the component mounts
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    // Log page view on route change
+    logPageView(location.pathname);
   }, [location]);
 
 

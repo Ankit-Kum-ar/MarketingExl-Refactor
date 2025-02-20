@@ -1,9 +1,20 @@
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
-const trackingId = import.meta.env.VITE_GA_TRACKING_ID; // Use the tracking ID from the environment variable
-ReactGA.initialize(trackingId);
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_TRACKING_ID; // Replace with your Measurement ID
 
-export const trackPageView = (page: string) => {
-  ReactGA.set({ page });
-  ReactGA.pageview(page);
+export const initGA = () => {
+  ReactGA.initialize(GA_MEASUREMENT_ID);
+};
+
+export const logPageView = (page: string) => {
+  ReactGA.send({ hitType: "pageview", page });
+};
+
+// You can add more functions to track custom events if needed
+export const logEvent = (category: string, action: string, label?: string) => {
+  ReactGA.event({
+    category,
+    action,
+    label,
+  });
 };
