@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Navbar from "./components/Navbar"
@@ -10,7 +10,15 @@ import ContactUs from "./pages/Contact/ContactUs"
 import ServiceDetail from "./pages/Services/components/ServiceDetail"
 import Blog from "./pages/Blog/Blog"
 import PageTransition from "./components/PageTransition"
+import { useEffect } from "react"
+import { trackPageView } from "./utils/analytics"
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
+
 
   return (
     <>
