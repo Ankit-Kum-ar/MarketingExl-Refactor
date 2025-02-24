@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { gifURL } from "@/utils/Constant";
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -35,7 +34,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="relative text-white flex justify-center items-center w-screen bg-cover bg-no-repeat bg-[url(bg-gif.gif)]"
+      className="relative text-white flex justify-center items-center w-screen bg-cover bg-no-repeat"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-55 "></div>
