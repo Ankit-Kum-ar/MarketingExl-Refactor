@@ -35,18 +35,17 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="relative text-white flex justify-center items-center w-screen bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url(${gifURL})` }}
+      className="relative text-white flex justify-center items-center w-screen bg-cover bg-no-repeat bg-[url(bg-gif.gif)]"
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-55"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-55 "></div>
 
       {/* Animated Image */}
       <img
-        ref={imgRef}
-        src="/images/Services.png"
-        alt="Services"
-        className="relative z-10 md:h-[120vh] h-[50vh]"
+      ref={imgRef}
+      src="/images/Services.png"
+      alt="Services"
+      className="relative z-10 md:h-[120vh] h-[50vh]"
       />
     </div>
   );

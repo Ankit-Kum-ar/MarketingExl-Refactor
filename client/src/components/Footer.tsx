@@ -79,11 +79,11 @@ const Footer = () => {
               to="/"
               className="text-xl font-bold text-primary font-poppins tracking-wider"
             >
-              <img src="/images/logo.png" alt="" />
+              <img src="/images/logo marketing EXL.png" alt="" className="h-10"/>
             </Link>
           </div>
           <div className="info object-contain text-left text-white font-poppins leading-relaxed text-xs md:text-sm font-thin py-4">
-            <p>
+            <p className="text-justify">
               We are committed to propelling your business forward in the
               dynamic digital marketing landscape. As a leading digital
               marketing agency, we specialize in crafting tailored strategies
@@ -93,17 +93,17 @@ const Footer = () => {
           </div>
           <div ref={iconsRef} className="icons flex flex-row justify-start gap-4 py-4">
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
-              <img src="/images/fb-icon.svg" alt="Facebook" className="text-white" />
+              <img src="/images/face.png" alt="Facebook" className="text-white h-6 rounded-full" />
             </div>
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
-              <img src="/images/ln-icon.svg" alt="Mail" className="text-white" />
+              <img src="/images/in icon.png" alt="LinkedIn" className="text-white h-6 rounded-full" />
             </div>
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
-              <img src="/images/insta-icon.svg" alt="Mail" className="text-white" />
+              <img src="/images/inst.png" alt="Instagram" className="text-white h-6 rounded-full" />
             </div>
           </div>
         </div>
-        <div className="quick text-white py-10">
+        <div className="quick text-white py-10 hidden md:block">
           <h4 className="py-2 text-xs md:text-sm">Quick Links</h4>
           <ul ref={linksRef} className="list-disc list-inside text-xs md:text-sm underline">
             <li className="hover:text-orange-500">
@@ -129,23 +129,23 @@ const Footer = () => {
         <div className="contact text-white flex flex-col justify-center pb-8">
           <div className="space-y-4">
             <div className="flex gap-2">
-              <img src="/images/Vector.png" alt="Mail" className="h-5 w-4 text-white mt-2" />
+              <img src="/images/location.png" alt="Mail" className="h-5  text-white mt-2" />
               <div>
                 <p className="text-orange-500 font-bold text-sm">Location</p>
-                <p className="text-sm">
-                  B-013, ATS Bouquet, Sector-132, Noida, Uttar <br /> Pradesh-201304
+                <p className="text-sm w-[90%]">
+                  B-013, ATS Bouquet, Sector-132, Noida, Uttar Pradesh-201304
                 </p>
               </div>
             </div>
             <div className="flex gap-2">
-              <img src="/images/Vector (1).png" alt="Phone" className="h-5 w-5 mt-2 text-white" />
+              <img src="/images/call.png" alt="Phone" className="h-5  mt-2 text-white" />
               <div>
                 <p className="text-orange-500 font-bold text-sm">Call</p>
                 <p className="text-sm">+91-8178070852</p>
               </div>
             </div>
             <div className="flex gap-2">
-              <img src="/images/Vector.svg" alt="Phone" className="h-4 w-5 mt-2 text-white" />
+              <img src="/images/email.png" alt="Email" className="h-4 mt-2 text-white" />
               <div>
                 <p className="text-orange-500 font-bold text-sm">Email</p>
                 <p className="text-sm">info@marketingexl.com</p>
@@ -157,7 +157,7 @@ const Footer = () => {
       <div className="w-full h-0.5 bg-white opacity-20"></div>
       <div className="footerbottom">
         <p className="text-[#CCCCCC] text-xs md:text-base p-2 md:p-4">
-          © Copyright 2024 MarketingEXL | All Rights Reserved by | Design by{" "}
+          © Copyright 2024 MarketingEXL | All Rights Reserved by{" "}
           <span className="text-white font-bold font-poppins">MarketingEXL</span>
         </p>
       </div>

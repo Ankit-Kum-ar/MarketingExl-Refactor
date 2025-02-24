@@ -11,7 +11,7 @@ const JoinUs = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
 
-  const phoneNumber = "+918512881278";
+  const phoneNumber = "+918851469617";
 
   useEffect(() => {
     const ctx = gsap.context(() => {

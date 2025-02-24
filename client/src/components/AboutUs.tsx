@@ -14,7 +14,7 @@ const AboutUs = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
 
   useEffect(() => {
-    const transitionDelay = 700; // Matches PageTransition duration
+    const transitionDelay = 300; // Matches PageTransition duration
 
     setTimeout(() => {
       setIsTransitioning(false); // Reveal content after transition
@@ -80,7 +80,7 @@ const AboutUs = () => {
           ref={imageRef}
           className="image-container relative bg-[url(/images/AboutUs.jpg)] object-cover w-full md:w-[20vw] h-[50vh] rounded-3xl"
         >
-          <button className="absolute -left-20 top-10 mt-10 py-2 px-6 md:px-6 rounded-lg font-semibold border border-white backdrop-blur bg-white/10 text-white">
+          <button className="absolute -left-20 top-10 mt-10 py-2 px-6 md:px-6 rounded-lg font-semibold border border-white backdrop-blur bg-white/10 text-white opacity-0 md:opacity-100">
             2000+ CLIENTS
           </button>
           <button className="absolute -bottom-4 left-7 py-2 px-4 md:px-6 rounded-lg font-semibold border border-white backdrop-blur bg-white/10 text-white">
@@ -90,9 +90,9 @@ const AboutUs = () => {
 
         {/* Text */}
         <div ref={textRef} className="text-container w-full md:w-[50%] text-white px-4 md:px-0">
-          <h3 className="font-semibold text-3xl md:text-4xl text-poppins">ABOUT US</h3>
+          <h3 className="font-semibold text-3xl md:text-4xl text-poppins text-center md:text-left">ABOUT US</h3>
           <p className="text-lg md:text-xl text-justify mt-4">
-            <span className="text-[#FC7901]">At Marketing Exl</span>, we are committed to propelling your business
+            <span className="text-[#FC7901] text-center">At Marketing Exl</span>, we are committed to propelling your business
             forward in the dynamic digital marketing landscape. As a leading digital marketing agency, we specialize in
             crafting tailored strategies that elevate your brand, engage your audience, and deliver measurable results.
             Our team of experts leverages the latest technologies and creative solutions to help you achieve your

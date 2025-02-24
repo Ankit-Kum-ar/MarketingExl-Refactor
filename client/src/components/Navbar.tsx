@@ -29,7 +29,7 @@ const Navbar = () => {
                             to="/"
                             className="text-xl font-bold text-primary font-poppins tracking-wider"
                         >
-                            <img src="/images/logo.png" alt="" />
+                            <img src="/images/logo marketing EXL.png" alt="" className="h-10" />
                         </Link>
                     </div>
 

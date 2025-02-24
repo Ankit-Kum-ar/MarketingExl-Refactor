@@ -85,7 +85,7 @@ const ClientCarousel = () => {
               key={index}
               className="carousel-image relative rounded-lg overflow-hidden shadow-lg hover:scale-110 transition-transform duration-500"
             >
-              <img src={src} alt={`Carousel Image ${index + 1}`} className="w-[200px] h-[200px] object-cover" />
+              <img src={src} alt={`Carousel Image ${index + 1}`} className="w-[200px] h-[200px] object-cover mix-blend-color-burn" />
               {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500">
                 <p className="absolute bottom-4 left-4 text-white font-medium"></p>
               </div> */}

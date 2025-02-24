@@ -159,9 +159,9 @@ const Form = () => {
         <div className="space-y-4">
           <div className="flex gap-2">
             <img
-              src="/images/Vector.svg"
-              alt="Mail"
-              className="h-8 w-10 text-white"
+              src="/images/location.png"
+              alt="Location"
+              className="h-10 m-4 text-white"
             />
             <div>
               <p className="text-orange-500 font-bold">Location</p>
@@ -170,9 +170,9 @@ const Form = () => {
           </div>
           <div className="flex gap-2">
             <img
-              src="/images/Vector.png"
+              src="/images/call.png"
               alt="Phone"
-              className="h-10 w-8 text-white"
+              className="h-10 m-2  text-white"
             />
             <div>
               <p className="text-orange-500 font-bold">Call</p>
@@ -181,9 +181,9 @@ const Form = () => {
           </div>
           <div className="flex gap-2">
             <img
-              src="/images/Vector (1).png"
-              alt="Phone"
-              className="h-10 w-10 text-white"
+              src="/images/email.png"
+              alt="Email"
+              className="w-10 m-2 text-white"
             />
             <div>
               <p className="text-orange-500 font-bold">Email</p>

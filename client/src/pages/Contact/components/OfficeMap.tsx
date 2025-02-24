@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 // Custom marker icon
 const customIcon = L.icon({
-  iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+  iconUrl: "/images/L.png",
   iconSize: [30, 45],
   iconAnchor: [15, 45],
   popupAnchor: [0, -40],
