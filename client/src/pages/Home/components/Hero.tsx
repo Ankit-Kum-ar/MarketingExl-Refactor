@@ -15,12 +15,12 @@ const Hero = () => {
     tl.fromTo(
       '.greeting',
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, stagger: 0.3, ease: 'power3.out' }
+      { opacity: 1, y: 0, duration: 1, stagger: 0.3, ease: 'power3.out', delay: 1.5, }
     );
     
     gsap.to(textRef.current, {
       text: 'MARKETING EXL',
-      duration: 2.5,
+      duration: 2,
       ease: 'power1.inOut',
       delay: 1.5,
     });

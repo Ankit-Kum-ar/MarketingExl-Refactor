@@ -92,15 +92,20 @@ const Footer = () => {
             </p>
           </div>
           <div ref={iconsRef} className="icons flex flex-row justify-start gap-4 py-4">
+            <a href="https://www.facebook.com/marketingexl/">
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
               <img src="/images/face.png" alt="Facebook" className="text-white h-6 rounded-full" />
-            </div>
+            </div></a>
+            <a href="https://www.linkedin.com/company/marketing-exl/posts/?feedView=all">
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
               <img src="/images/in icon.png" alt="LinkedIn" className="text-white h-6 rounded-full" />
-            </div>
+            </div> 
+            </a>
+            <a href="https://www.instagram.com/marketing_exl/">
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
               <img src="/images/inst.png" alt="Instagram" className="text-white h-6 rounded-full" />
             </div>
+            </a>
           </div>
         </div>
         <div className="quick text-white py-10 hidden md:block">
@@ -123,6 +128,9 @@ const Footer = () => {
             </li>
             <li className="hover:text-orange-500">
               <Link to="/blog">Blog</Link>
+            </li>
+            <li className="hover:text-orange-500">
+              <Link to="/blog">Privacy Policy</Link>
             </li>
           </ul>
         </div>

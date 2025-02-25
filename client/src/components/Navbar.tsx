@@ -4,7 +4,11 @@ import DesktopNavbar from "./DesktopNavbar";
 import { Button } from "./ui/button";
 import MobileNavbar from "./MobileNavbar";
 
-const Navbar = () => {
+interface NavbarProps {
+  formVis: () => void;
+}
+
+const Navbar = ({ formVis }: NavbarProps) => {
     const [opacity, setOpacity] = useState(1);
 
     useEffect(() => {
@@ -34,7 +38,7 @@ const Navbar = () => {
                     </div>
 
                     <DesktopNavbar />
-                    <Button className="hidden md:block">Get Started</Button>
+                    <Button onClick={()=> formVis()} className="hidden md:block">Get Started</Button>
                     <MobileNavbar />
                 </div>
             </div>

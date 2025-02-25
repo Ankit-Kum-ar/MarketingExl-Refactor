@@ -14,7 +14,7 @@ const AboutUs = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
 
   useEffect(() => {
-    const transitionDelay = 300; // Matches PageTransition duration
+    const transitionDelay = 100; // Matches PageTransition duration
 
     setTimeout(() => {
       setIsTransitioning(false); // Reveal content after transition
@@ -27,12 +27,12 @@ const AboutUs = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 1.5,
+          duration: 1,
           ease: "power3.out",
           scrollTrigger: {
             trigger: element,
             start: "top 80%",
-            toggleActions: "play reverse play reverse", // Repeats animation when scrolling
+            // toggleActions: "play reverse play reverse", // Repeats animation when scrolling
           },
         }
       );
@@ -44,7 +44,7 @@ const AboutUs = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 1,
         ease: "power3.out",
         scrollTrigger: {
           trigger: aboutRef.current,
@@ -74,7 +74,7 @@ const AboutUs = () => {
       </div>
 
       {/* Content */}
-      <div className="container flex flex-col md:flex-row w-[90vw] max-w-7xl gap-12 justify-center">
+      <div className="container flex flex-col md:flex-row w-[90vw] max-w-7xl gap-12 justify-center items-center mx-auto">
         {/* Image */}
         <div
           ref={imageRef}

@@ -90,7 +90,7 @@ const Testimonial = () => {
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="bg-[url(/images/test-bg.png)] object-cover text-white rounded-xl shadow-lg p-6 flex-shrink-0 snap-center w-[88vw] md:w-[45vw] lg:w-[28vw]"
+            className="bg-[url(/images/test-bg.png)] bg-no-repeat object-cover text-white rounded-xl shadow-lg p-6 flex-shrink-0 snap-center w-[88vw] md:w-[45vw] lg:w-[28vw] xl:w-[28vw] 2xl:w-[25vw]"
             
           >
             <img src="/images/icon.svg" alt='"' className="h-6 w-6"/>

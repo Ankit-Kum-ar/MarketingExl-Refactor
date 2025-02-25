@@ -10,10 +10,18 @@ import ContactUs from "./pages/Contact/ContactUs"
 import ServiceDetail from "./pages/Services/components/ServiceDetail"
 import Blog from "./pages/Blog/Blog"
 import PageTransition from "./components/PageTransition"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { initGA, logPageView } from "./utils/analytics"
+import FloatButton from "./components/FloatButton"
+import FormPopup from "./components/FormPopup"
 function App() {
   const location = useLocation();
+
+  const [showForm, setShowForm] = useState(false)
+
+  const toggleForm = () => {
+    setShowForm(!showForm)
+  }
 
   useEffect(() => {
     // Initialize GA only once, when the component mounts
@@ -28,16 +36,18 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      
+    {showForm?<FormPopup onClose={toggleForm} />:null}
+      <Navbar formVis={toggleForm} />
+      <FloatButton />
       <ScrollToTop />
       
       <PageTransition>
         <Routes>
-          <Route path="/" element = {<Home />} />
+          
+          <Route path="/" element = {<Home toggleForm={toggleForm}  />} />
           <Route path="/about" element = { <About/> } />
           <Route path="/services" element = { <Services /> } />
-          <Route path="/packages" element = {<Package />} />
+          <Route path="/packages" element = {<Package toggleForm={toggleForm}/>} />
           <Route path="/contact" element ={<ContactUs />} />
           <Route path='/blog' element={<Blog />} />
           <Route path="/service/:id" element={<ServiceDetail />} />

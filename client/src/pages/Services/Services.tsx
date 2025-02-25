@@ -1,5 +1,5 @@
 import Heading from "@/components/Heading"
-import Hero from "./components/Hero"
+// import Hero from "./components/Hero"
 import OurServices from "./components/OurServices"
 import CardContainer from "./components/CardContainer"
 import ServiceCoursel from "./components/ServiceCoursel"
@@ -11,7 +11,7 @@ const Services = () => {
     <div className="flex flex-col items-center justify-center">
       <Heading title="Services"/>
       <PageTitle title="Services - MarketingExl" />
-      <Hero />
+      {/* <Hero /> */}
       <OurServices />
       <CardContainer />
       <ServiceCoursel />

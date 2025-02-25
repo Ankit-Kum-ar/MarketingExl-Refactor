@@ -6,7 +6,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PricingPlans: React.FC = () => {
+interface PricingPlansProps {
+  toggleForm: () => void;
+}
+
+const PricingPlans: React.FC< PricingPlansProps> = ({ toggleForm}) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -30,7 +34,7 @@ const PricingPlans: React.FC = () => {
 
   return (
     <>
-      <div ref={containerRef} className="bg-black text-white py-10 px-6 lg:px-16">
+      <div ref={containerRef} className="bg-black text-white py-10 px-6 lg:px-16 w-full">
       <h2 className="text-3xl lg:text-4xl font-bold text-center text-orange-500 mb-10">
         CHOOSE YOUR PLAN TODAY!
       </h2>
@@ -83,7 +87,7 @@ const PricingPlans: React.FC = () => {
           </ul>
 
           <div className="flex justify-center items-center w-full">
-            <button className="bg-[#ff9534] bg-opacity-10 px-16 object-center py-2 text-center text-[#ff9534] text-base font-semibold font-poppins rounded-full hover:bg-[#ff9534] hover:text-white transition duration-300">
+            <button onClick={toggleForm} className="bg-[#ff9534] bg-opacity-10 px-16 object-center py-2 text-center text-[#ff9534] text-base font-semibold font-poppins rounded-full hover:bg-[#ff9534] hover:text-white transition duration-300">
               Choose Plan
             </button>
           </div>
@@ -148,7 +152,7 @@ const PricingPlans: React.FC = () => {
             
           </ul>
           <div className="flex justify-center items-center w-full">
-            <button className="bg-[#ffc896] bg-opacity-10 px-16 object-center py-2 text-center text-white text-base font-semibold font-poppins rounded-full hover:bg-white hover:text-[#ff9534] transition duration-300">
+            <button onClick={toggleForm}  className="bg-[#ffc896] bg-opacity-10 px-16 object-center py-2 text-center text-white text-base font-semibold font-poppins rounded-full hover:bg-white hover:text-[#ff9534] transition duration-300">
               Choose Plan
             </button>
           </div>
@@ -219,7 +223,7 @@ const PricingPlans: React.FC = () => {
           </ul>
 
           <div className="flex justify-center items-center w-full">
-            <button className="bg-[#ff9534] bg-opacity-10 px-16 object-center py-2 text-center text-[#ff9534] text-base font-semibold font-poppins rounded-full hover:bg-[#ff9534] hover:text-white transition duration-300">
+            <button onClick={toggleForm}  className="bg-[#ff9534] bg-opacity-10 px-16 object-center py-2 text-center text-[#ff9534] text-base font-semibold font-poppins rounded-full hover:bg-[#ff9534] hover:text-white transition duration-300">
               Choose Plan
             </button>
           </div>

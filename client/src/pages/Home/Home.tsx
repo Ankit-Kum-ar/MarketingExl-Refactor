@@ -8,7 +8,11 @@ import PricingPlans from "@/components/PricingPlans"
 import Testimonial from "./components/Testimonial"
 import PageTitle from "@/components/PageTitle"
 
-const Home = () => {
+interface HomeProps {
+  toggleForm: () => void;
+}
+
+const Home: React.FC<HomeProps> = ( {toggleForm} ) => {
   return (
     <div className="bg-[#0f0f0f] ">
       <PageTitle title="Home - MarketingExl" />
@@ -18,7 +22,7 @@ const Home = () => {
       <Joinus />
       <ClientCarousel />
       <Form />
-      <PricingPlans />
+      <PricingPlans toggleForm={toggleForm} />
       <Testimonial />
       
     </div>

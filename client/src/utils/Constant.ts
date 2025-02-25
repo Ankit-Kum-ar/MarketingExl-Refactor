@@ -1,4 +1,4 @@
-export const gifURL = "https://s3-alpha-sig.figma.com/img/5274/e3e0/90c383e36b4eb562c8ef8a4e8fcd5137?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hobpyyoO~J3O2p3nCgyua5wIVYoy0EyzsVFbPqF5vrmmHRcIp9vV5Zvt5bi3Iz~I3ZOOFMeTJEfP-~QPcMTXeIr-3n9PvBpWYQNS3wwbiufS3uAIO2hRi7yPMN~j-hk1E3flIQJWfJxuRH~19-fAM0vS4Jxp~~0glQHtK7Z9dil2f5a15g4rN6VPnyeVtEZHuToCxuPKiYpjetqN841nt4I8qO6Ci7N7BJMbvHlIPhvFlZvLUMO7lxjQDsRe3MlUMjIOOuei~-yodYu-q-~FpVyhTAbJTH9LkRkev1wxD-LExswYiO-mExQn47haI-ce0LC8SaosC3DnqQpXmTI6vg__";
+// export const gifURL = "https://s3-alpha-sig.figma.com/img/5274/e3e0/90c383e36b4eb562c8ef8a4e8fcd5137?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hobpyyoO~J3O2p3nCgyua5wIVYoy0EyzsVFbPqF5vrmmHRcIp9vV5Zvt5bi3Iz~I3ZOOFMeTJEfP-~QPcMTXeIr-3n9PvBpWYQNS3wwbiufS3uAIO2hRi7yPMN~j-hk1E3flIQJWfJxuRH~19-fAM0vS4Jxp~~0glQHtK7Z9dil2f5a15g4rN6VPnyeVtEZHuToCxuPKiYpjetqN841nt4I8qO6Ci7N7BJMbvHlIPhvFlZvLUMO7lxjQDsRe3MlUMjIOOuei~-yodYu-q-~FpVyhTAbJTH9LkRkev1wxD-LExswYiO-mExQn47haI-ce0LC8SaosC3DnqQpXmTI6vg__";
 
 export  const services = [
     { id: 'social-media', vector: 'v1', image: 'i1', text: 'Social Media Management' },
