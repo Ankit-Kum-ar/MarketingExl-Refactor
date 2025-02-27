@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import DesktopNavbar from "./DesktopNavbar";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 import MobileNavbar from "./MobileNavbar";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 interface NavbarProps {
   formVis: () => void;
@@ -38,7 +39,7 @@ const Navbar = ({ formVis }: NavbarProps) => {
                     </div>
 
                     <DesktopNavbar />
-                    <Button onClick={()=> formVis()} className="hidden md:block">Get Started</Button>
+                    <HoverBorderGradient onClick={()=> formVis()} className="hidden md:block">Get Started</HoverBorderGradient>
                     <MobileNavbar />
                 </div>
             </div>
