@@ -12,7 +12,7 @@ const ClientCarousel = () => {
 
     // Duplicate images for infinite scrolling effect
   const carouselImages = [
-    "/images/Frame 151.jpg",
+    "/images/Frame 151.png",
     "/images/Frame 152.png",
     "/images/Frame 153.png",
     "/images/Frame 154.png",
