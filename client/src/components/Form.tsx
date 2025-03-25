@@ -187,7 +187,7 @@ const Form = () => {
             />
             <div>
               <p className="text-orange-500 font-bold">Email</p>
-              <p>info@marketingexl.com</p>
+              <p>info@marketingexl.in</p>
             </div>
           </div>
         </div>

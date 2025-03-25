@@ -103,13 +103,13 @@ const JoinUs = () => {
         <div ref={buttonsRef} className="flex flex-col md:flex-row gap-4">
           {/* Mail Button */}
           <a
-            href="mailto:info@marketingexl.com"
+            href="mailto:info@marketingexl.in"
             className="flex flex-col gap-3 items-center justify-center p-6 bg-[#FC7901] rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300 ease-out"
           >
             <img src="/images/ic_round-message.svg" alt="Mail" className="h-8 w-8" />
             <div className="text-center">
               <p className="font-semibold font-poppins">Urgent Message</p>
-              <p className="text-sm font-poppins">info@marketingexl.com</p>
+              <p className="text-sm font-poppins">info@marketingexl.in</p>
             </div>
           </a>
           {/* Call Button */}

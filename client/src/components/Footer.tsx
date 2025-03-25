@@ -156,7 +156,7 @@ const Footer = () => {
               <img src="/images/email.png" alt="Email" className="h-4 mt-2 text-white" />
               <div>
                 <p className="text-orange-500 font-bold text-sm">Email</p>
-                <p className="text-sm">info@marketingexl.com</p>
+                <p className="text-sm">info@marketingexl.in</p>
               </div>
             </div>
           </div>

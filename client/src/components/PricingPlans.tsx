@@ -96,7 +96,7 @@ const PricingPlans: React.FC< PricingPlansProps> = ({ toggleForm}) => {
         {/* Premium Plan */}
         <div className="bg-[url('/images/Premium.png')] object-cover text-white rounded-2xl shadow-lg p-6 space-y-6 relative ">
           <div className="absolute top-6 right-0 mr-6 bg-white py-1 px-4 rounded-full  text-center text-black text-xs font-medium font-poppins tracking-wide">
-            MOST POPULA
+            MOST POPULAR
           </div>
           <h3 className="text-2xl font-poppins font-semibold">Premium Plan</h3>
           <ul className="space-y-2">
