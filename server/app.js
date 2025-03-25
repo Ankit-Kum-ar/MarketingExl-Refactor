@@ -20,8 +20,6 @@ app.use(express.urlencoded({ extended: true }));
 //     }
 // ));    
 
-const cors = require("cors");
-
 const allowedOrigins = [
   "https://marketingexl-client.onrender.com",  // OLD frontend
   "https://marketingexl.com"                   // NEW frontend
