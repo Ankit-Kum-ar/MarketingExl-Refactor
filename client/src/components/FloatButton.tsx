@@ -1,8 +1,8 @@
 
 const FloatButton = () => {
 
-    const whatsappNumber = "+918851469617"; //  WhatsApp number
-    const phoneNumber = "+918851469617"; // Phone number
+    const whatsappNumber = "+919310588976"; //  WhatsApp number
+    const phoneNumber = "+919310588976"; // Phone number
     const whatsappMessage = "Hello! I would like to inquire about your services."; // Default WhatsApp message
   
   return (

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -7,69 +6,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-  const footerRef = useRef<HTMLDivElement | null>(null);
-  const iconsRef = useRef<HTMLDivElement | null>(null);
-  const linksRef = useRef<HTMLUListElement | null>(null);
 
-  useEffect(() => {
-    if (footerRef.current) {
-      gsap.fromTo(
-        footerRef.current,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.5,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: footerRef.current,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }
-
-    if (iconsRef.current) {
-      gsap.fromTo(
-        iconsRef.current.children,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: iconsRef.current,
-            start: "top 95%",
-          },
-        }
-      );
-    }
-
-    if (linksRef.current) {
-      gsap.fromTo(
-        linksRef.current.children,
-        { opacity: 0, x: -20 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.15,
-          scrollTrigger: {
-            trigger: linksRef.current,
-            start: "top 95%",
-          },
-        }
-      );
-    }
-  }, []);
 
   return (
     <section
-      ref={footerRef}
+
       className="w-screen bg-[#2b1205] flex flex-col items-center pt-16"
     >
       <div className="footertop w-[80vw] flex flex-col md:flex-row justify-between">
@@ -91,7 +32,7 @@ const Footer = () => {
               measurable results.
             </p>
           </div>
-          <div ref={iconsRef} className="icons flex flex-row justify-start gap-4 py-4">
+          <div className="icons flex flex-row justify-start gap-4 py-4">
             <a href="https://www.facebook.com/marketingexl/">
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
               <img src="/images/face.png" alt="Facebook" className="text-white h-6 rounded-full" />
@@ -110,7 +51,7 @@ const Footer = () => {
         </div>
         <div className="quick text-white py-10 hidden md:block">
           <h4 className="py-2 text-xs md:text-sm">Quick Links</h4>
-          <ul ref={linksRef} className="list-disc list-inside text-xs md:text-sm underline">
+          <ul  className="list-disc list-inside text-xs md:text-sm underline">
             <li className="hover:text-orange-500">
               <Link to="/"> Home </Link>
             </li>
@@ -149,7 +90,7 @@ const Footer = () => {
               <img src="/images/call.png" alt="Phone" className="h-5  mt-2 text-white" />
               <div>
                 <p className="text-orange-500 font-bold text-sm">Call</p>
-                <p className="text-sm">+91-8178070852</p>
+                <p className="text-sm">+91-9310588976</p>
               </div>
             </div>
             <div className="flex gap-2">
