@@ -107,6 +107,12 @@ function App() {
 
   return (
     <>
+
+    <div className="max-w-full overflow-hidden bg-black">
+
+
+
+
       {showForm ? <FormPopup onClose={toggleForm} /> : null}
       <Navbar formVis={toggleForm} />
       <FloatButton />
@@ -135,6 +141,8 @@ function App() {
       </PageTransition>
 
       <Footer />
+
+      </div>
     </>
   );
 }

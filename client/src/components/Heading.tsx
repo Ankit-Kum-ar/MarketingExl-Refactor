@@ -40,25 +40,16 @@ const Heading: React.FC<HeadingProps> = ({ title }) => {
           duration: 0.3,
           ease: "elastic.out(1, 0.5)",
         },
-        "-=0.3" // Slight overlap for natural feel
+        "-0.3" // Slight overlap for natural feel
       );
 
-      // Subtle pulsating effect (Looping)
-      gsap.to(headingRef.current, {
-        scale: 1.02,
-        duration: 1.5,
-        ease: "sine.inOut",
-        repeat: -1,
-        yoyo: true, // Scale in and out smoothly
-        delay: 1.5, // Start after initial animation
-      });
     }
   }, []);
 
   return (
     <div
       ref={headingRef}
-      className="w-full flex items-center justify-center text-white md:h-28 h-20 bg-custom-gradient-2 md:text-5xl text-3xl font-semibold font-poppins"
+      className="w-full  flex items-center justify-center text-white md:h-28 h-20 bg-custom-gradient-2 md:text-5xl text-3xl font-semibold font-poppins"
     >
       {title}
     </div>

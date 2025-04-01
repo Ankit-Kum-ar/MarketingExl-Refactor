@@ -9,7 +9,7 @@ import BlogDetails from "./BlogDetails";
 
 const Blog = ({blogItems}) => {
   return (
-    <div className="flex flex-col items-center justify-center bg-black min-h-screen">
+    <div className="flex flex-col max-w-full overflow-hidden items-center justify-center bg-black min-h-screen">
       {/* Page Title */}
       <PageTitle title="Our Blog - Marketing EXL" />
       <Heading title="Our Blogs" />
