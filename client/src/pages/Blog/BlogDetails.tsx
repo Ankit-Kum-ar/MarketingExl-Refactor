@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { BlogGallery } from "./BlogCard";
 

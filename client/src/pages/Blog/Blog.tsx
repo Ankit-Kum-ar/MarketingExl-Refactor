@@ -2,12 +2,16 @@ import Heading from "@/components/Heading";
 import PageTitle from "@/components/PageTitle";
 import { motion } from "framer-motion";
 import { BlogGallery } from "./BlogCard";
-import { Route } from "react-router-dom";
-import BlogDetails from "./BlogDetails";
+// import BlogDetails from "./BlogDetails";
 
 
 
-const Blog = ({blogItems}) => {
+// Define the type for blogItems
+interface BlogProps {
+  blogItems: any[]; // Replace 'any[]' with the specific type if known
+}
+
+const Blog = ({ blogItems }: BlogProps) => {
   return (
     <div className="flex flex-col max-w-full overflow-hidden items-center justify-center bg-black min-h-screen">
       {/* Page Title */}

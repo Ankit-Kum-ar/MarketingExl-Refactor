@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Navbar from "./components/Navbar";
@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/Contact/ContactUs";
 import ServiceDetail from "./pages/Services/components/ServiceDetail";
 import PageTransition from "./components/PageTransition";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FloatButton from "./components/FloatButton";
 import FormPopup from "./components/FormPopup";
 import BlogDetails from "./pages/Blog/BlogDetails";
