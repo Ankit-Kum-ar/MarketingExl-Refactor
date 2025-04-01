@@ -1,10 +1,23 @@
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
-export function BlogGallery({ visibleItems = [] }) {
+interface BlogItem {
+  id: string;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+  author: string;
+  likes: number;
+  comments: number;
+  shares: number;
+}
+
+export function BlogGallery({ visibleItems = [] }: { visibleItems: BlogItem[] }) {
   if (!visibleItems || visibleItems.length === 0) {
     return <p className="text-center text-gray-500">No blog items available.</p>;
   }
+
 
   const navigate = useNavigate();
   return (

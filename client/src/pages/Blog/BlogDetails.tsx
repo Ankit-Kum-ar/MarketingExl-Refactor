@@ -2,10 +2,39 @@ import { useParams, Link } from "react-router-dom";
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { BlogGallery } from "./BlogCard";
 
-const BlogDetails = ({ blogItems }) => {
+interface BlogItem {
+  id: number;
+  title: string;
+  image: string;
+  date: string;
+  author: string;
+  description: string;
+  likes: number;
+  comments: number;
+  shares: number;
+}
+
+interface BlogDetailsProps {
+  blogItems: BlogItem[];
+}
+
+const BlogDetails = ({ blogItems }: BlogDetailsProps) => {
   const { id } = useParams();
-  const blog = blogItems.find((item) => item.id === parseInt(id)); // Find the blog by ID
-  const relatedBlogs = blogItems.filter((item) => item.id !== parseInt(id)); // Filter out the current blog
+  const blogId = id ? parseInt(id) : null;
+  const blog = blogId !== null ? blogItems.find((item) => item.id === blogId) : undefined; // Find the blog by ID
+  const relatedBlogs = blogId !== null
+    ? blogItems
+        .filter((item) => item.id !== blogId)
+        .map((item) => ({ ...item, id: item.id.toString() })) // Convert id to string
+    : []; // Filter out the current blog
+
+  if (!blog) {
+    return (
+      <div className="min-h-screen bg-black text-white p-8 md:p-16 flex items-center justify-center">
+        <p className="text-xl text-gray-300">Blog not found.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen  bg-black text-white p-8 md:p-16">
