@@ -5,6 +5,7 @@ import gsap from 'gsap';
 
 import { leadGenerate } from '@/redux/slices/LeadSlice';
 import { useAppDispatch } from '@/redux/hook';
+import { phoneNumber } from '@/utils/Constant';
 
 interface FormData {
   fullName: string;
@@ -176,7 +177,7 @@ const Form = () => {
             />
             <div>
               <p className="text-orange-500 font-bold">Call</p>
-              <p>+91-9310588976</p>
+              <p>{phoneNumber}</p>
             </div>
           </div>
           <div className="flex gap-2">

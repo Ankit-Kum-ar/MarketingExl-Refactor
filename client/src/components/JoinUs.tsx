@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { phoneNumber } from "@/utils/Constant";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,8 +11,6 @@ const JoinUs = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
-
-  const phoneNumber = "+918851469617";
 
   useEffect(() => {
     const ctx = gsap.context(() => {
