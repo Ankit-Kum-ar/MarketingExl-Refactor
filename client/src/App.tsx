@@ -1,7 +1,6 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { addBlogsItems } from "./redux/slices/BlogSlice"; // Adjust the path as per your project structure
-
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -22,31 +21,26 @@ import { useAppDispatch } from "./redux/hook";
 
 function App() {
   const dispatch = useAppDispatch();
-  
-  const [showForm, setShowForm] = useState(false);
-  
+
+  const [showForm, setShowForm] = useState(true);
+
   const toggleForm = () => {
-    setShowForm(false); // Close the form when the user submits or closes it
+    setShowForm(!showForm); // Toggle open/close
   };
-  
+
   useEffect(() => {
     fetch("https://api.sheetbest.com/sheets/d23e4b1e-d168-4a31-9e03-33232ef2f52a")
       .then((res) => res.json())
       .then((data) => {
-        dispatch(addBlogsItems(data.reverse())); // 🔁 Latest pehle
+        dispatch(addBlogsItems(data.reverse())); // 🔁 Latest first
       });
   }, [dispatch]);
-  
-  
-
-
-
 
   return (
     <>
+    <Navbar formVis={toggleForm} />
       <div className="max-w-full overflow-hidden bg-black">
         {showForm && <FormPopup onClose={toggleForm} />}
-        <Navbar formVis={toggleForm} />
         <FloatButton />
         <ScrollToTop />
 
