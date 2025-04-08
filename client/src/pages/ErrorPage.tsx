@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 function ErrorPage() {
@@ -11,7 +10,7 @@ function ErrorPage() {
           <p className="mt-4 mb-8 text-white">The page you're looking for doesn't exist or has been moved.</p>
           <Link
             to="/"
-            className="px-6 py-3 bg-gray-700 text-white font-bold font-semibold rounded-full hover:bg-[#6b573f] transition duration-300 ease-in-out "
+            className="px-6 py-3 bg-gray-700 text-white  font-semibold rounded-full hover:bg-[#6b573f] transition duration-300 ease-in-out "
           >
             Go Home
           </Link>

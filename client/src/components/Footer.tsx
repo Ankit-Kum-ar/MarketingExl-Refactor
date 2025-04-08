@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { phoneNumber } from "@/utils/Constant";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +43,7 @@ const Footer = () => {
               <img src="/images/in icon.png" alt="LinkedIn" className="text-white h-6 rounded-full" />
             </div> 
             </a>
-            <a href="https://www.instagram.com/marketing_exl/">
+            <a href="https://www.instagram.com/marketing.exl/">
             <div className="bg-[#554137] aspect-square rounded-lg h-10 flex items-center justify-center cursor-pointer">
               <img src="/images/inst.png" alt="Instagram" className="text-white h-6 rounded-full" />
             </div>
@@ -90,7 +91,7 @@ const Footer = () => {
               <img src="/images/call.png" alt="Phone" className="h-5  mt-2 text-white" />
               <div>
                 <p className="text-orange-500 font-bold text-sm">Call</p>
-                <p className="text-sm">+91-9310588976</p>
+                <p className="text-sm">{phoneNumber}</p>
               </div>
             </div>
             <div className="flex gap-2">
