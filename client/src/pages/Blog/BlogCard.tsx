@@ -1,7 +1,19 @@
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-export function BlogGallery({ visibleItems = [] }) {
+interface BlogItem {
+  id: string;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+  author: string;
+  likes: number;
+  comments: number;
+  shares: number;
+}
+
+export function BlogGallery({ visibleItems = [] }: { visibleItems: BlogItem[] }) {
 
 
 

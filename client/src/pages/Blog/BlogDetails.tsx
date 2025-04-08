@@ -2,14 +2,15 @@ import { useParams } from "react-router-dom";
 import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { BlogGallery } from "./BlogCard";
 import { useAppSelector } from "@/redux/hook";
+import { Blog } from "@/redux/slices/BlogSlice";
 
 const BlogDetails = () => {
-  const blogItems = useAppSelector((state) => state.blogs.blogs); // 👈 ".blogs" is inside blogSlice
 
+  const blogItems = useAppSelector((store) => store.blogs.blogs) as unknown as Blog[];
   const { id } = useParams();
 
-  const blog = blogItems.find((item) => {
-    return item.id == Number(id); // Convert id to number for comparison
+  const blog = blogItems.find((item: Blog) => {
+    return item.id == id; // Convert id to number for comparison
   }); // Find the blog by ID
 
   if (!blog) {
@@ -20,7 +21,9 @@ const BlogDetails = () => {
     ); // Handle case when blog is not found
   }
 
-  const relatedBlogs = blogItems.filter((item) => item.id != Number(id)); // Filter out the current blog
+  const relatedBlogs = blogItems
+    .filter((item) => item.id != id) // Filter out the current blog
+    .map((item) => ({ ...item, id: item.id.toString() })); // Convert id to string
 
   return (
     <div className="min-h-screen  bg-black text-white p-8 md:p-16">
