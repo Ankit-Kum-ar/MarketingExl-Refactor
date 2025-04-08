@@ -22,6 +22,16 @@ const ClientCarousel = () => {
     "/images/Frame 158.png",
     "/images/Frame 159.png",
     "/images/Frame 160.png",
+    "/images/AffinityExpress.png",
+    "/images/Couriyaar.png",
+    "/images/Fragrancia.png",
+    "/images/HH.png",
+    "/images/Nimi.png",
+    "/images/Noddy.png",
+    "/images/PookieStays.png",
+    "/images/Sky.png",
+    "/images/Vastra.png",
+    "/images/VisionMaster.png",
   ];
 
    // Duplicate images for seamless infinite scrolling

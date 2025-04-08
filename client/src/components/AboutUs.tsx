@@ -81,7 +81,7 @@ const AboutUs = () => {
           className="image-container relative bg-[url(/images/AboutUs.jpg)] object-cover w-full md:w-[20vw] h-[50vh] rounded-3xl"
         >
           <button className="absolute -left-20 top-10 mt-10 py-2 px-6 md:px-6 rounded-lg font-semibold border border-white backdrop-blur bg-white/10 text-white opacity-0 md:opacity-100">
-            2000+ CLIENTS
+            100+ CLIENTS
           </button>
           <button className="absolute -bottom-4 left-7 py-2 px-4 md:px-6 rounded-lg font-semibold border border-white backdrop-blur bg-white/10 text-white">
             8 Years of Experience
