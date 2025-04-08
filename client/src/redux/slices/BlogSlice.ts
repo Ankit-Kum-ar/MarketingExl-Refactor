@@ -2,10 +2,16 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 // Blog item ka type define
 export interface Blog {
-  id: number;
+  id: string;
   title: string;
-  content: string;
-  // Add more fields if your API returns more (e.g., date, author, image)
+  description: string;
+  image: string;
+  likes: number;
+  comments: number;
+  shares: number;
+  date: string;
+  author: string;
+  tag: string[];
 }
 
 // State ka type define
