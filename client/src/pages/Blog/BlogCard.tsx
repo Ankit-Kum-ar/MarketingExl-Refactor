@@ -2,6 +2,10 @@ import { Heart, MessageCircle, Share2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 export function BlogGallery({ visibleItems = [] }) {
+
+
+
+
   if (!visibleItems || visibleItems.length === 0) {
     return <p className="text-center text-gray-500">No blog items available.</p>;
   }
