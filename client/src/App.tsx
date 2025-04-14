@@ -5,7 +5,6 @@ import { addBlogsItems } from "./redux/slices/BlogSlice"; // Adjust the path as 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Navbar from "./components/Navbar";
-import Services from "./pages/Services/Services";
 import Footer from "./components/Footer";
 import Package from "./pages/Package/Package";
 import ScrollToTop from "./components/ScrollToTop";
@@ -18,6 +17,7 @@ import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./pages/Blog/BlogDetails";
 import ErrorPage from "./pages/ErrorPage";
 import { useAppDispatch } from "./redux/hook";
+import Service from "./pages/Service/Service";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -48,7 +48,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home toggleForm={toggleForm} />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/services" element={<Service />} />
             <Route path="/packages" element={<Package toggleForm={toggleForm} />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/blog" element={<Blog />} />
