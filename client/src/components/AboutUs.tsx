@@ -84,7 +84,7 @@ const AboutUs = () => {
             100+ CLIENTS
           </button>
           <button className="absolute -bottom-4 left-7 py-2 px-4 md:px-6 rounded-lg font-semibold border border-white backdrop-blur bg-white/10 text-white">
-            8 Years of Experience
+            3 Years of Experience
           </button>
         </div>
 
